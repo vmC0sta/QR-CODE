@@ -10,36 +10,32 @@
 
   <link rel="stylesheet" href="./css/style.css">
 
-  <title>Frontend Mentor | QR code component</title>
+  <title>QR code component</title>
 
 </head>
 
 <body>
 
-  <div class="content">
-    <h1 class="title_content">Gerador de QR CODE</h1>
-    <div class="input-group">
-      <label class="label__content">URL</label>
-      <input type="text" class="input__content" autofocus="on" id="url">
+  <main>
+    <div class="content">
+      <h1 class="title_content">Gerador de QR CODE</h1>
+      <div class="input-group">
+        <label class="label__content">URL</label>
+        <input type="text" class="input__content" autofocus="on" id="url">
+      </div>
+      <button class="btn__content" id="btn_gerarQRCODE">Gerar QR code</button>
     </div>
 
-    <button class="btn__content" id="btn_gerarQRCODE">Gerar QR CODE</button>
-
-  </div>
-
-  <div class="card">
-  
+    <div class="card">
       <div id="qrcode"></div>
 
-    <h3 class="title__card">
-      Agora é só ler :)
-    </h1>
-
-    <p class="descricao__card">
-      Escaneie o QR code para visitar.
-    </p>
-
-  </div>
+      <h3 class="title__card">Agora é só ler :)</h3>
+      <p class="descricao__card">
+        Escaneie o QR code para visitar.
+      </p>
+      <button class="btn__card" id="btn-voltar">Gerar outro QR code</button>
+    </div>
+  </main>
 
 
   <script src="./js/qrcode.js"></script>
