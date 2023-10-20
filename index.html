@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+  <link rel="stylesheet" href="./css/style.css">
+
   <title>Frontend Mentor | QR code component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  Improve your front-end skills by building projects
+  <div class="content">
+    <h1 class="title_content">Gerador de QR CODE</h1>
+    <div class="input-group">
+      <label class="label__content">URL</label>
+      <input type="text" class="input__content" autofocus="on" id="url">
+    </div>
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <button class="btn__content" id="btn_gerarQRCODE">Gerar QR CODE</button>
+
   </div>
+
+  <div class="card">
+  
+      <div id="qrcode"></div>
+
+    <h3 class="title__card">
+      Agora é só ler :)
+    </h1>
+
+    <p class="descricao__card">
+      Escaneie o QR code para visitar.
+    </p>
+
+  </div>
+
+
+  <script src="./js/qrcode.js"></script>
+  <script src="./js/scripts.js"></script>
 </body>
+
 </html>
